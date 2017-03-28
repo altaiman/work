@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ИМПОКАР</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="static/js/separate-js/libs.js"></script>
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page">
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__main">
+                    <button class="header__menu">
+                    </button>
+                    <a class="header__logotype logotype" href="index.html">
+                        <img class="logotype__pic" src="static/img/general/logotype.png" alt="" role="presentation" />
+                        <h3 class="logotype__subtitle">Перевозка автомобилей автовозами
+                                          </h3>
+                    </a><a class="header__link header__link_calc icon icon_truck" href="#">Расчет стоимости перевозки автомобиля</a>
+                    <div class="header__contact"><a class="header__link header__link_call icon icon_phone" href="#">Заказать звонок</a><a class="header__link header__link_phone" href="tel:88007755165">8 (800) 77-55-165</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__navigation navigation">
+                <div class="wrapper">
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Компания</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Вопрос-ответ</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Оплата</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Расписание автопоездов</a>
+                            </li>
+                        </ul>
+                    </div><a class="navigation__link navigation__link_cab" href="#">Вход в личный кабинет</a>
+                </div>
+            </div>
+        </header>
+        <section class="calculate">
+            <div class="calculate__window window">
+                <h3 class="window__title">Расчет стоимости перевозки
+                              </h3>
+                <div class="window__content">
+                    <form class="window__form form">
+                        <label class="form__field"><span class="form__field-name">Марка авто *</span>
+                            <select class="form__field-inp">
+                                <option>Acura</option>
+                                <option>Toyota</option>
+                                <option>Lada</option>
+                            </select>
+                        </label>
+                        <label class="form__field"><span class="form__field-name">Модель авто *</span>
+                            <select class="form__field-inp">
+                                <option>MDX</option>
+                                <option>XDM</option>
+                                <option>DMX</option>
+                            </select>
+                        </label><span class="form__field-caption">Направление перевозки автомобиля:</span>
+                        <label class="form__field"><span class="form__field-name">Откуда *</span>
+                            <select class="form__field-inp">
+                                <option>Барнаул</option>
+                                <option>Москва</option>
+                                <option>Упячка</option>
+                            </select>
+                        </label>
+                        <label class="form__field"><span class="form__field-name">Куда *</span>
+                            <select class="form__field-inp">
+                                <option>Москва</option>
+                                <option>Санкт-Петербург</option>
+                                <option>DMX</option>
+                            </select>
+                        </label>
+                        <fieldset class="form__field-set"><span class="form__field-caption">Желаемая дата отправки:</span>
+                            <label class="form__field"><span class="form__field-name">Дата отправки *</span>
+                                <input class="form__field-inp" type="date" value="2017-02-27" />
+                            </label>
+                        </fieldset>
+                        <fieldset class="form__field-set"><span class="form__field-caption">Состояние автомобиля:</span>
+                            <label class="form__radio">
+                                <input class="form__radio-inp" type="radio" name="state" value="good" checked="checked" /><span class="form__radio-name">Авто <br> на ходу</span>
+                            </label>
+                            <label class="form__radio">
+                                <input class="form__radio-inp" type="radio" name="state" value="bad" /><span class="form__radio-name">Авто поврежден или сделан тюнинг</span>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn_next">Далее
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="how-we-works section">
+            <div class="wrapper">
+                <h2 class="how-we-works__title section__title">Как мы работаем
+                        </h2>
+                <ul class="how-we-works__list">
+                    <li class="how-we-works__item stage icons icons_stage icon icon_stage-1"><span class="stage__name">Укажите авто и маршрут</span>
+                    </li>
+                    <li class="how-we-works__item stage icons icons_stage icon icon_stage-2"><span class="stage__name">Выберите лучший тариф</span>
+                    </li>
+                    <li class="how-we-works__item stage icons icons_stage icon icon_stage-3"><span class="stage__name">Введите личные данные</span>
+                    </li>
+                    <li class="how-we-works__item stage icons icons_stage icon icon_stage-4"><span class="stage__name">Оплатите перевозку</span>
+                    </li>
+                    <li class="how-we-works__item stage icons icons_stage icon icon_stage-5"><span class="stage__name">Получите авто в срок</span>
+                    </li>
+                </ul><a class="btn" href="#">Узнать всё о перевозках</a>
+            </div>
+        </section>
+        <section class="about section">
+            <div class="wrapper">
+                <div class="about__content">
+                    <h2 class="about__title section__title">"Импокар" Сервис доставки авто
+                                  </h2>
+                    <p class="about__text">
+                        ИМПОКАР – перевозка легковых автомобилей.
+                        <br>Миссия нашей компании – удовлетворение потребностей клиента по перевозке легковых автомобилей на высоком профессиональном уровне, предоставление полного спектра услуг «от двери до двери» в короткие сроки и по справедливой цене.
+                    </p>
+                    <p class="about__text">
+                        Транспортная компания ООО «Импокар» работает на рынке перевозок легковых автомобилей с 2006 года. В настоящее время парк состоит из 30 современных автовозов европейского производства (тягачи MAN TGX и Volvo FH, полуприцепы-автовозы Kassbohrer Ruslan,
+                        LOHR Eurolohr 1.21, ROLFO Blizzard 3.1). Вся техника в собственности.
+                    </p>
+                    <h3 class="about__title section__title section__title_sub">Наши преимущества
+                                  </h3>
+                    <ul class="list">
+                        <li class="list__item">Наличие собственного парка автозаков
+                        </li>
+                        <li class="list__item">Движение по расписанию с точностью до часа
+                        </li>
+                        <li class="list__item">Партнёры в регионах работающие по стандартам
+                        </li>
+                        <li class="list__item">On-line продажи билетов на автовоз
+                        </li>
+                    </ul>
+                </div><a class="btn" href="about.html">Подробнее о компании</a>
+            </div>
+        </section>
+        <section class="logistic section">
+            <div class="logistic__map">
+            </div>
+            <div class="wrapper">
+                <div class="logistic__content">
+                    <div class="logistic__main">
+                        <h2 class="logistic__title section__title">Логистика
+                                            </h2>
+                        <p class="logistic__text">Мы выстроили эффективную логистику по России, разбив пункты доставки на 28 магистральных городов и 22 города-спутника.
+                        </p>
+                    </div>
+                    <div class="logistic__legend legend">
+                        <ul class="legend__list">
+                            <li class="legend__item line-1">Краснодар - Москва
+                            </li>
+                            <li class="legend__item line-5">Москва - Казань - Новосибирск
+                            </li>
+                            <li class="legend__item line-2">Санкт-Петербург - Москва
+                            </li>
+                            <li class="legend__item line-6">Москва - Самара - Новосибирск
+                            </li>
+                            <li class="legend__item line-3">Сибирь 1
+                            </li>
+                            <li class="legend__item line-7">Москва - Пермь - Екатеринбург
+                            </li>
+                            <li class="legend__item line-4">Сибирь 2
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews section">
+            <div class="wrapper">
+                <h2 class="reviews__title section__title">Уже оценили работу с нами
+                        </h2>
+                <div class="reviews__slider slider">
+                    <div class="slider__controls">
+                        <button class="slider__arrow slider__arrow_prev">
+                        </button>
+                        <button class="slider__arrow slider__arrow_next">
+                        </button>
+                    </div>
+                    <ul class="slider__list">
+                        <li class="review-block">
+                            <div class="review-block__wrap">
+                                <div class="review-block__pic">
+                                    <img src="static/img/assets/reviews/car1.jpg" alt="" role="presentation" />
+                                </div>
+                                <div class="review-block__info"><span class="review-block__caption">Иванов Павел Анатольевич (Екатеринбург)</span>
+                                    <p class="review-block__text">23 сентября 2015 года Импокар перевезли мне автомобиль Ваз 2106 из Москвы в Екатеринбург. Доставили даже раньше чем обещали!!!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="review-block">
+                            <div class="review-block__wrap">
+                                <div class="review-block__pic">
+                                    <img src="static/img/assets/reviews/car1.jpg" alt="" role="presentation" />
+                                </div>
+                                <div class="review-block__info"><span class="review-block__caption">Иванов Павел Анатольевич (Екатеринбург)</span>
+                                    <p class="review-block__text">23 сентября 2015 года Импокар перевезли мне автомобиль Ваз 2106 из Москвы в Екатеринбург. Доставили даже раньше чем обещали!!!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="review-block">
+                            <div class="review-block__wrap">
+                                <div class="review-block__pic">
+                                    <img src="static/img/assets/reviews/car1.jpg" alt="" role="presentation" />
+                                </div>
+                                <div class="review-block__info"><span class="review-block__caption">Иванов Павел Анатольевич (Екатеринбург)</span>
+                                    <p class="review-block__text">23 сентября 2015 года Импокар перевезли мне автомобиль Ваз 2106 из Москвы в Екатеринбург. Доставили даже раньше чем обещали!!!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="company-list">
+                    <li class="company-list__item">
+                        <img src="static/img/assets/reviews/company.jpg" alt="" role="presentation" />
+                    </li>
+                    <li class="company-list__item">
+                        <img src="static/img/assets/reviews/company.jpg" alt="" role="presentation" />
+                    </li>
+                    <li class="company-list__item">
+                        <img src="static/img/assets/reviews/company.jpg" alt="" role="presentation" />
+                    </li>
+                    <li class="company-list__item">
+                        <img src="static/img/assets/reviews/company.jpg" alt="" role="presentation" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="news section">
+            <div class="wrapper">
+                <h2 class="news__title section__title">Что нового?
+                        </h2>
+                <div class="slider">
+                    <div class="slider__controls slider__controls_news">
+                        <button class="slider__arrow slider__arrow_prev">
+                        </button>
+                        <button class="slider__arrow slider__arrow_next">
+                        </button>
+                    </div>
+                    <ul class="news__list">
+                        <li class="news-block"><span class="news-block__caption">Кризис в очередной раз сыграл на руку российскому бизнесу</span><span class="news-block__date">17.05.2016</span>
+                            <p class="news-block__text">
+                                В связи со снижением курса рубля последние пару лет автомобили в России стали очень привлекательны для иностранных покупателей. Объективно валюта подросла вдвое, а цена на автомобили увеличилась максимум на 30%. Именно эта разница привлекает к нам зарубежных
+                                автолюбителей.
+
+                            </p><a class="news-block__link news-block__link_read" href="news-item.html">Подробнее</a>
+                        </li>
+                        <li class="news-block"><span class="news-block__caption">Кризис в очередной раз сыграл на руку российскому бизнесу</span><span class="news-block__date">17.05.2016</span>
+                            <p class="news-block__text">
+                                В связи со снижением курса рубля последние пару лет автомобили в России стали очень привлекательны для иностранных покупателей. Объективно валюта подросла вдвое, а цена на автомобили увеличилась максимум на 30%. Именно эта разница привлекает к нам зарубежных
+                                автолюбителей.
+
+                            </p><a class="news-block__link news-block__link_read" href="news-item.html">Подробнее</a>
+                        </li>
+                        <li class="news-block"><span class="news-block__caption">Кризис в очередной раз сыграл на руку российскому бизнесу</span><span class="news-block__date">17.05.2016</span>
+                            <p class="news-block__text">
+                                В связи со снижением курса рубля последние пару лет автомобили в России стали очень привлекательны для иностранных покупателей. Объективно валюта подросла вдвое, а цена на автомобили увеличилась максимум на 30%. Именно эта разница привлекает к нам зарубежных
+                                автолюбителей.
+
+                            </p><a class="news-block__link news-block__link_read" href="news-item.html">Подробнее</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__content">
+                    <a class="footer__logotype logotype" href="index.html">
+                        <img class="logotype__pic" src="static/img/general/logotype.png" alt="" role="presentation" />
+                    </a>
+                    <div class="footer__payment payment"><span class="payment__text">Сервис поддерживает оплату:</span>
+                        <ul class="payment__list">
+                            <li class="payment__item payment__item_mastercard">
+                            </li>
+                            <li class="payment__item payment__item_maestro">
+                            </li>
+                            <li class="payment__item payment__item_visa">
+                            </li>
+                            <li class="payment__item payment__item_sber">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__social social">
+                        <a class="social__link social__link_vk" href="#"></a>
+                        <a class="social__link social__link_twitter" href="#"></a>
+                        <a class="social__link social__link_facebook" href="#"></a>
+                    </div>
+                    <div class="footer__contact contact"><a class="contact__link contact__link_phone" href="88007755165">8 (800) 77-55-165</a><a class="contact__link contact__link_call" href="">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="static/js/main.min.js"></script>
+    </body>
+
+</html>
