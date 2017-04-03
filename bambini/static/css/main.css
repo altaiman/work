@@ -647,7 +647,6 @@ button:focus {
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
-  height: inherit;
 }
 .section-title {
   text-align: center;
@@ -1111,6 +1110,52 @@ button:focus {
   font-size: 14px;
   padding: 15px;
 }
+.auth {
+  margin: 50px auto 0;
+  padding: 30px 0 50px;
+  width: 500px;
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
+.auth__title {
+  font-size: 32px;
+  font-family: 'ExposureCTwo', sans-serif;
+  color: #497366;
+  text-transform: uppercase;
+}
+.auth__form {
+  padding: 0 100px;
+}
+.auth__form-field {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.auth__form-check {
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+}
+.auth__form-fieldname {
+  display: inline-block;
+  font-family: 'ExposureCTwo', sans-serif;
+  min-width: 80px;
+}
+.auth__form-fieldname input {
+  margin-right: 10px;
+}
+.auth__login {
+  padding: 10px 15px;
+  font-family: 'ExposureCTwo', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #497366;
+  border: none;
+  border-radius: 5px;
+}
 .article-page {
   padding: 2em 2em 120px;
 }
@@ -1229,17 +1274,19 @@ button:focus {
   content: '';
   background: url('../img/assets/excourse3d/lenta.png');
 }
-.excourse3d__title {
+.excourse3d__btn {
   position: relative;
   color: #497366;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
   text-decoration: underline;
+  border: none;
+  background-color: transparent;
 }
-.excourse3d__title:hover {
+.excourse3d__btn:hover {
   color: #7c6a53;
   text-decoration: none;
 }
-.excourse3d__title::before {
+.excourse3d__btn::before {
   position: absolute;
   z-index: -1;
   width: 887px;
@@ -1394,6 +1441,8 @@ button:focus {
 }
 .footer__map {
   display: none;
+  width: 100%;
+  height: 495px;
   position: relative;
   z-index: 1;
   margin-bottom: 40px;
@@ -1846,6 +1895,9 @@ button:focus {
   -webkit-transition: opacity .3s .01s, left 1s;
   transition: opacity .3s .01s, left 1s;
 }
+.navigation__item_drop {
+  position: relative;
+}
 .navigation__item_drop:hover {
   padding-bottom: 1em;
 }
@@ -1895,6 +1947,7 @@ button:focus {
   content: '';
 }
 .drop__list {
+  margin-top: 3.5px;
   padding: 0;
   list-style: none;
 }
@@ -2368,6 +2421,19 @@ button:focus {
   .header__link_mobile {
     display: inline-block;
   }
+  .navigation__item_drop::after {
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: transparent;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+            transform: rotate(45deg) translateY(-50%);
+  }
 }
 .kids-now {
   padding: 4em 0 .5em;
@@ -2602,6 +2668,15 @@ button:focus {
 .modal__tip {
   color: #999999;
   font-size: 12px;
+}
+.modal_3d {
+  padding: 50px;
+  width: 80%;
+  height: 80%;
+}
+.modal_3d::before,
+.modal_3d::after {
+  display: none;
 }
 @media (max-width: 760px) {
   .modal {
@@ -3609,6 +3684,9 @@ button:focus {
 .timetable__tabs {
   padding-left: 25px;
 }
+.timetable__tab-content {
+  display: none;
+}
 .timetable__content {
   padding: 2em;
 }
@@ -3647,7 +3725,8 @@ button:focus {
   box-shadow: 0 4px 10px -5px black;
 }
 .timetable__table-cell_time {
-  padding-left: 30px;
+  width: 25%;
+  padding-left: 20px;
   font-size: 30px;
   box-shadow: none;
   background: url('../img/general/beauty-lines-white.png');
@@ -3725,6 +3804,11 @@ button:focus {
     font-size: 28px;
   }
 }
+@media (max-width: 1000px) {
+  .timetable__table-cell_time {
+    width: 180px;
+  }
+}
 @media (max-width: 760px) {
   .timetable__tabs {
     padding-left: 10px;
@@ -3755,6 +3839,7 @@ button:focus {
     height: 80px;
   }
   .timetable__table-cell_time {
+    width: auto;
     padding-left: 0;
     margin-bottom: 5px;
     background-size: 100% 350px;
@@ -3796,6 +3881,9 @@ button:focus {
     top: -3px;
     margin: 0;
   }
+}
+.auth {
+  font-size: 16px;
 }
 .banner__wrap {
   height: 464px;

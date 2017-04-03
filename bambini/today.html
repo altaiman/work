@@ -10,8 +10,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
-        <link href="static/css/mainu1vez06c6pyzp3qh0k9.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     </head>
 
     <body class="page">
@@ -26,11 +27,11 @@
                         <ul class="navigation__list">
                             <li class="navigation__item"><a class="navigation__link" href="#">О нас</a>
                             </li>
-                            <li class="navigation__item navigation__item_drop"><a class="navigation__link" href="today.html">Детский сад</a>
+                            <li class="navigation__item navigation__item_drop"><a class="navigation__link">Детский сад</a>
                                 <div class="navigation navigation_drop drop">
                                     <div class="drop__head">
                                         <button class="drop__btn btn btn_back">
-                                        </button><span class="drop__title">Детский клуб</span>
+                                        </button><span class="drop__title">Детский сад</span>
                                     </div>
                                     <ul class="drop__list">
                                         <li class="drop__item"><a class="drop__link" href="today.html">Режим дня</a>
@@ -143,170 +144,176 @@
                         <div class="timetable__content">
                             <div class="timetable__tabs">
                                 <label class="tab checked">Для детей до 4 лет
-                                    <input class="tab__radio" type="radio" name="kids" value="before4" checked="checked" />
+                                    <input class="tab__radio" type="radio" name="kids" value="1" checked="checked" />
                                 </label>
                                 <label class="tab">Для детей от 4 лет и старше
-                                    <input class="tab__radio" type="radio" name="kids" value="after4" />
+                                    <input class="tab__radio" type="radio" name="kids" value="2" />
                                 </label>
                             </div>
-                            <table class="timetable__table">
-                                <tr class="timetable__table-row">
-                                    <th class="timetable__table-head">Время
-                                    </th>
-                                    <th class="timetable__table-head">Режимные моменты
-                                    </th>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">7:00 - 8:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_yellow">
-                                        <p class="timetable__table-text">Прием детей. Самостоятельная игровая деятельность
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">8:00 - 8:10
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_lightgreen">
-                                        <p class="timetable__table-text">Утренняя гимнастика с элементами фонетической ритмики
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">8:10 - 8:30
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_oceanblue">
-                                        <p class="timetable__table-text">Подготовка к завтраку
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">8:30 - 9:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_purple">
-                                        <p class="timetable__table-text">Завтрак
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">9:00 - 10:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_yellow">
-                                        <p class="timetable__table-text">Непосредственная образовательная деятельность
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">10:00 - 10:25
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_lightgreen">
-                                        <p class="timetable__table-text">Второй завтрак
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">10:30 - 12:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_oceanblue">
-                                        <p class="timetable__table-text">Подготовка к прогулке. Прогулка
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">12:10 - 12:40
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_purple">
-                                        <p class="timetable__table-text">Обед
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">12:40 - 15:30
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_yellow">
-                                        <p class="timetable__table-text">Тихий час
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">15:30 - 16:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_lightgreen">
-                                        <p class="timetable__table-text">Подъем. Коррекционная гимнастика после сна
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">16:00 - 16:30
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_oceanblue">
-                                        <p class="timetable__table-text">Полдник
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">16:30 - 17:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_purple">
-                                        <p class="timetable__table-text">Индивидуальная работа с детьми. Занятия узких специалистов
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">17:00 - 17:30
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_yellow">
-                                        <p class="timetable__table-text">Ужин
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">17:30 - 18:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_lightgreen">
-                                        <p class="timetable__table-text">Индивидуальная работа воспитателя с детьми
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="timetable__table-row">
-                                    <td class="timetable__table-cell timetable__table-cell_time">
-                                        <p class="timetable__table-text">18:00 - 19:00
-                                        </p>
-                                    </td>
-                                    <td class="timetable__table-cell timetable__table-cell_oceanblue">
-                                        <p class="timetable__table-text">Уход детей домой. Работа с родителями
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="timetable__tab-content" data-content="1">
+                                <table class="timetable__table">
+                                    <tr class="timetable__table-row">
+                                        <th class="timetable__table-head">Время
+                                        </th>
+                                        <th class="timetable__table-head">Режимные моменты
+                                        </th>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">7:00 - 8:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_yellow">
+                                            <p class="timetable__table-text">Прием детей. Самостоятельная игровая деятельность
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">8:00 - 8:10
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_lightgreen">
+                                            <p class="timetable__table-text">Утренняя гимнастика с элементами фонетической ритмики
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">8:10 - 8:30
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_oceanblue">
+                                            <p class="timetable__table-text">Подготовка к завтраку
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">8:30 - 9:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_purple">
+                                            <p class="timetable__table-text">Завтрак
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">9:00 - 10:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_yellow">
+                                            <p class="timetable__table-text">Непосредственная образовательная деятельность
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">10:00 - 10:25
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_lightgreen">
+                                            <p class="timetable__table-text">Второй завтрак
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">10:30 - 12:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_oceanblue">
+                                            <p class="timetable__table-text">Подготовка к прогулке. Прогулка
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">12:10 - 12:40
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_purple">
+                                            <p class="timetable__table-text">Обед
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">12:40 - 15:30
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_yellow">
+                                            <p class="timetable__table-text">Тихий час
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">15:30 - 16:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_lightgreen">
+                                            <p class="timetable__table-text">Подъем. Коррекционная гимнастика после сна
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">16:00 - 16:30
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_oceanblue">
+                                            <p class="timetable__table-text">Полдник
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">16:30 - 17:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_purple">
+                                            <p class="timetable__table-text">Индивидуальная работа с детьми. Занятия узких специалистов
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">17:00 - 17:30
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_yellow">
+                                            <p class="timetable__table-text">Ужин
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">17:30 - 18:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_lightgreen">
+                                            <p class="timetable__table-text">Индивидуальная работа воспитателя с детьми
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="timetable__table-row">
+                                        <td class="timetable__table-cell timetable__table-cell_time">
+                                            <p class="timetable__table-text">18:00 - 19:00
+                                            </p>
+                                        </td>
+                                        <td class="timetable__table-cell timetable__table-cell_oceanblue">
+                                            <p class="timetable__table-text">Уход детей домой. Работа с родителями
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="timetable__tab-content" data-content="2">
+                                <p>Контент
+                                </p>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -314,8 +321,6 @@
         </div>
         <footer class="footer">
             <div class="footer__map map">
-                <iframe class="map__ya" src="https://api-maps.yandex.ru/frame/v1/-/CZtzRLMc" width="100%" height="495" frameborder="0">
-                </iframe>
             </div>
             <div class="wrapper">
                 <div class="footer__content">
@@ -388,7 +393,7 @@
         </div>
 
 
-        <script src="static/js/mainu1vez06c6pyzp3qh0k9.min.js"></script>
+        <script src="static/js/main.min.js"></script>
     </body>
 
 </html>
