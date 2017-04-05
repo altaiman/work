@@ -553,13 +553,7 @@ $('.banner__slider').slick({
     speed: 1000
 });
 "use strict";
-'use strict';
-
-$(function () {
-    $('.excourse3d__btn').on('click', function () {
-        $('.modal.modal_3d').bPopup();
-    });
-});
+"use strict";
 "use strict";
 "use strict";
 'use strict';
@@ -594,7 +588,6 @@ $(function () {
         };
     });
 });
-"use strict";
 "use strict";
 'use strict';
 
@@ -646,16 +639,41 @@ $('.history__years').slick({
     draggable: false
 });
 "use strict";
-"use strict";
-"use strict";
-"use strict";
-"use strict";
-"use strict";
 'use strict';
 
-$('.parents__btn_question').click(function () {
-    $('.modal_question').bPopup();
+$(function () {
+    $('[data-modal]').on('click', function (e) {
+        var _this = this;
+
+        var target = e.target;
+
+        if ($(this).attr('data-modal') === 'video') {
+            (function () {
+                var iframe = $('.modal_video iframe'),
+                    video = $(_this).attr('data-video');
+                videoId = video.substring(video.length, video.length - 11);
+                src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+
+                $('.modal_video').bPopup({
+                    onClose: function onClose() {
+                        iframe.attr('src', '');
+                    }
+                });
+
+                $('.modal_video').find('.modal__title').text($(_this).find('.video__title').text());
+                iframe.attr('src', src);
+            })();
+        } else {
+            $('.modal_' + $(this).attr('data-modal')).bPopup();
+        }
+    });
 });
+"use strict";
+"use strict";
+"use strict";
+"use strict";
+"use strict";
+"use strict";
 "use strict";
 "use strict";
 "use strict";
@@ -696,3 +714,4 @@ $(function () {
     });
     checked();
 });
+"use strict";
