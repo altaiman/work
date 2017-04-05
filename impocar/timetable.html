@@ -33,31 +33,67 @@
                         <img class="logotype__pic" src="static/img/general/logotype.png" alt="" role="presentation" />
                         <h3 class="logotype__subtitle">Перевозка автомобилей автовозами
                                           </h3>
-                    </a><a class="header__link header__link_calc icon icon_truck" href="#">Расчет стоимости перевозки автомобиля</a>
+                    </a><a class="header__link header__link_calc icon icon_truck" href="#">Расчет стоимости перевозки автомобиля</a><a class="header__link header__link_mark icon icon_mark" href="#">Где сейчас моё авто?</a>
                     <div class="header__contact"><a class="header__link header__link_call icon icon_phone" href="#">Заказать звонок</a><a class="header__link header__link_phone" href="tel:88007755165">8 (800) 77-55-165</a>
                     </div>
                 </div>
             </div>
             <div class="header__navigation navigation">
-                <div class="wrapper">
-                    <div class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Компания</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Вопрос-ответ</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Оплата</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#">Расписание автопоездов</a>
-                            </li>
-                        </ul>
-                    </div><a class="navigation__link navigation__link_cab" href="#">Вход в личный кабинет</a>
+                <div class="navigation__top">
+                    <div class="wrapper">
+                        <div class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a class="menu__link" href="about.html">О нас</a>
+                                </li>
+                                <li class="menu__item menu__item_drop" data-dropitem="company"><a class="menu__link" href="#">Компания</a>
+                                </li>
+                                <li class="menu__item"><a class="menu__link" href="#">Вопрос-ответ</a>
+                                </li>
+                                <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a>
+                                </li>
+                                <li class="menu__item menu__item_drop" data-dropitem="pay"><a class="menu__link" href="#">Оплата</a>
+                                </li>
+                                <li class="menu__item"><a class="menu__link" href="#">Контакты</a>
+                                </li>
+                                <li class="menu__item"><a class="menu__link" href="#">Расписание автопоездов</a>
+                                </li>
+                            </ul>
+                        </div><a class="navigation__link navigation__link_cab" href="#">Вход в личный кабинет</a>
+                    </div>
+                </div>
+                <div class="navigation__drop">
+                    <div class="wrapper">
+                        <div class="menu menu_drop" data-menuitem="company">
+                            <ul class="menu__list-drop">
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="about.html">О нас</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Компания</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Вопрос-ответ</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Сотрудничество</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Оплата</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Контакты</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Расписание автопоездов</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu menu_drop" data-menuitem="pay">
+                            <ul class="menu__list-drop">
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Сотрудничество</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Оплата</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Контакты</a>
+                                </li>
+                                <li class="menu__item-drop"><a class="menu__link-drop" href="#">Расписание автопоездов</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -65,8 +101,6 @@
             <div class="wrapper">
                 <h2 class="section__title section__title_inner">Расписание автопоездов
                         </h2>
-                <p class="section__text">
-                </p>
                 <div class="content content_timetable">
                     <div class="content__wrap">
                         <p class="content__text">Впервые на рынке грузоперевозок Импокар представляет новую схему работы.
@@ -175,12 +209,12 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <button class="route__btn btn">Оформить заявку
-                                    </button>
-                                    <button class="route__btn btn">Рассчитать стоимость
-                                    </button>
-                                    <div class="ymap">
-                                    </div>
+                                </div>
+                                <button class="route__btn btn">Оформить заявку
+                                </button>
+                                <button class="route__btn btn">Рассчитать стоимость
+                                </button>
+                                <div class="ymap">
                                 </div>
                             </div>
                             <div class="route">
@@ -273,12 +307,12 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <button class="route__btn btn">Оформить заявку
-                                    </button>
-                                    <button class="route__btn btn">Рассчитать стоимость
-                                    </button>
-                                    <div class="ymap">
-                                    </div>
+                                </div>
+                                <button class="route__btn btn">Оформить заявку
+                                </button>
+                                <button class="route__btn btn">Рассчитать стоимость
+                                </button>
+                                <div class="ymap">
                                 </div>
                             </div>
                             <div class="route route_o">
@@ -371,12 +405,12 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <button class="route__btn btn">Оформить заявку
-                                    </button>
-                                    <button class="route__btn btn">Рассчитать стоимость
-                                    </button>
-                                    <div class="ymap">
-                                    </div>
+                                </div>
+                                <button class="route__btn btn">Оформить заявку
+                                </button>
+                                <button class="route__btn btn">Рассчитать стоимость
+                                </button>
+                                <div class="ymap">
                                 </div>
                             </div>
                             <div class="route route_o">
@@ -467,12 +501,12 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <button class="route__btn btn">Оформить заявку
-                                    </button>
-                                    <button class="route__btn btn">Рассчитать стоимость
-                                    </button>
-                                    <div class="ymap">
-                                    </div>
+                                </div>
+                                <button class="route__btn btn">Оформить заявку
+                                </button>
+                                <button class="route__btn btn">Рассчитать стоимость
+                                </button>
+                                <div class="ymap">
                                 </div>
                             </div>
                             <div class="route route_g">
@@ -569,12 +603,12 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <button class="route__btn btn">Оформить заявку
-                                    </button>
-                                    <button class="route__btn btn">Рассчитать стоимость
-                                    </button>
-                                    <div class="ymap">
-                                    </div>
+                                </div>
+                                <button class="route__btn btn">Оформить заявку
+                                </button>
+                                <button class="route__btn btn">Рассчитать стоимость
+                                </button>
+                                <div class="ymap">
                                 </div>
                             </div>
                         </li>
