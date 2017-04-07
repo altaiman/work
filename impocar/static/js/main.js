@@ -1,5 +1,6 @@
 "use strict";
 "use strict";
+"use strict";
 'use strict';
 
 $(function () {
@@ -11,7 +12,6 @@ $(function () {
         $(slide).toggleClass('content__slide_up');
     });
 });
-"use strict";
 "use strict";
 "use strict";
 'use strict';
@@ -32,7 +32,14 @@ $(function () {
         tabWork();
     });
 });
-"use strict";
+'use strict';
+
+$(function () {
+    $('.header__menu').on('click', function () {
+        $(this).toggleClass('header__menu_opened');
+        $('.page').toggleClass('page_no-scroll');
+    });
+});
 "use strict";
 "use strict";
 "use strict";
@@ -56,6 +63,19 @@ $(function () {
         $(menu).addClass('menu_show');
 
         $('header').on('mouseleave', leave);
+    });
+
+    $('.menu__item_drop-m').on('click', function (e) {
+        var target = e.target;
+
+        if (!$(target).hasClass('menu__link_m')) return;
+        $('.menu__list-drop_m').slideUp();
+
+        var drop = $(this).find('.menu__list-drop_m');
+
+        if ($(drop).css('display') === 'none') {
+            drop.slideDown();
+        }
     });
 });
 'use strict';
@@ -195,6 +215,7 @@ $(function () {
     });
 });
 "use strict";
+"use strict";
 'use strict';
 
 $(function () {
@@ -207,4 +228,3 @@ $(function () {
         $('iframe').attr('height', '200px');
     }
 });
-"use strict";
