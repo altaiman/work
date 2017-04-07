@@ -555,7 +555,6 @@ $('.banner__slider').slick({
 "use strict";
 "use strict";
 "use strict";
-"use strict";
 'use strict';
 
 $(function () {
@@ -588,6 +587,7 @@ $(function () {
         };
     });
 });
+"use strict";
 "use strict";
 'use strict';
 
@@ -628,7 +628,9 @@ $('.btn_back').click(function () {
 // for special
 
 $('.links__link_eye').click(function () {
+    var specialStyle = '<link href="static/css/separate-css/style-special.css" rel="stylesheet" type="text/css">';
     $(this).toggleClass('links__link_eye-active');
+    $('head').append(specialStyle);
 });
 
 $('.history__years').slick({
@@ -681,6 +683,7 @@ $(function () {
 "use strict";
 "use strict";
 "use strict";
+"use strict";
 'use strict';
 
 $('.slider__content').slick({
@@ -699,7 +702,6 @@ $('.slider__content').slick({
         }
     }]
 });
-"use strict";
 'use strict';
 
 $(function () {

@@ -1,0 +1,323 @@
+.page {
+    background: white;
+}
+
+.header_main {
+    height: auto;
+}
+
+.header_main::before,
+.header_main::after {
+    display: none;
+}
+
+.whell, .mill {
+    display: none;
+}
+
+.header_top .wrapper {
+    position: relative;
+}
+
+.header__contact {
+    position: absolute;
+    z-index: 10;
+    bottom: -50px;
+    right: 0;
+}
+
+.header__link_phone {
+    font-size: 32px;
+    color: black;
+}
+
+.header__link_question {
+    display: none;
+}
+
+.header__logo {
+    margin: 0 auto;
+    background: url('../../img/assets/header/logo-b.png') no-repeat;
+}
+
+.header__subtitle {
+    display: block;
+    position: static;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+}
+
+.header__link_about {
+    top: auto; bottom: 80px; right: 0;
+    font-size: 21px;
+    color: black
+}
+
+.header__link_about::before {
+    display: none;
+}
+
+.navigation {
+    width: 100%;
+    margin: 0;
+    color: black;
+}
+
+.navigation__item {
+    margin: 1em 0;
+}
+
+.navigation__item:hover .navigation__link {
+    background-color: black;
+}
+
+.navigation__link {
+    padding: .8em;
+    font-size: 21px;
+}
+
+.drop__link {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.drop__link:hover {
+    background-color: black;
+}
+
+.links {
+    display: none;
+}
+
+.section-title {
+    padding: 15px 0 0;
+    font-size: 36px;
+    color: black;
+}
+
+.banner {
+    display: none;
+}
+
+.kids-now {
+    padding: 0;
+}
+
+.kids-now__content {
+    height: auto;
+    background: none;
+}
+
+.kids-now__content::before {
+    display: none;
+}
+
+.kids-now__pic {
+    display: none;
+}
+
+.kids-now__text {
+    position: static;
+    margin: 30px auto;
+    width: 240px;
+    font-size: 24px;
+    color: black;
+}
+
+.kids-now__text::after {
+    display: none;
+}
+
+.feautures_top {
+    display: none;
+}
+
+.feauture {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 0;
+    width: 300px;
+    font-size: 21px;
+    color: black;
+    /*border: 3px dashed currentColor;*/
+}
+
+.feauture:hover {
+    color: black;
+}
+
+.feauture::before {
+    display: none;
+}
+
+.excourse3d {
+    display: none;
+}
+
+.news .wrapper::before,
+.news .wrapper::after,
+.news__content::before,
+.news__content::after {
+    display: none;
+}
+
+.news__content {
+    padding: 0 0 50px;
+    background: none;
+}
+
+.news__list {
+    padding: 0;
+}
+
+.news-article {
+    position: static;
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.news-article__head {
+    display: none;
+}
+
+.news-article__title {
+    font-size: 32px;
+    color: black;
+}
+
+.news-article__text {
+    font-size: 24px;
+}
+
+.news__link {
+    font-size: 24px;
+    color: black;
+}
+
+.news__link_more {
+    margin: 0;
+}
+
+.gymn {
+    display: none;
+}
+
+.reviews__content {
+    height: auto;
+    background: none;
+}
+
+.reviews__content::after {
+    display: none;
+}
+
+.review__pic {
+    display: none;
+}
+
+.review__name {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.review__text,
+.review__link {
+    font-size: 18px;
+    color: black;
+}
+
+.reviews__link {
+    font-weight: bold;
+}
+
+.reviews__link:hover {
+    color: black;
+}
+
+.reviews__all-reviews {
+    top: 2em;
+    color: black;
+}
+
+.reviews__all-reviews::before {
+    display: none;
+}
+
+.slider__btn {
+    background-color: black;
+}
+
+.slider__btn::before,
+.slider__btn::after {
+    background-color: white;
+}
+
+.footer {
+    padding-top: 50px;
+}
+
+.footer__content::before {
+    display: none;
+}
+
+.footer__info {
+    color: black;
+}
+
+.footer__link_found-us {
+    color: black;
+    font-size: 21px;
+}
+
+.footer__link {
+    color: black;
+}
+
+.footer__link:hover {
+    color: black;
+}
+
+#letsrock {
+    width: 140px;
+    fill: black;
+}
+
+@media (max-width: 1170px) {
+    .navigation__link {
+        padding: .33em;
+    }
+
+    .header__link_about {
+        width: 312px;
+    }
+
+    .news__content {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header.header__main {
+        width: 100% !important;
+    }
+
+    .header__link_about {
+        bottom: auto;
+    }
+
+    .news-article:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .navigation.navigation_footer .navigation__link {
+        font-size: 21px;
+        color: black;
+    }
+}
