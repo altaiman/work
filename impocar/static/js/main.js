@@ -1,6 +1,5 @@
 "use strict";
 "use strict";
-"use strict";
 'use strict';
 
 $(function () {
@@ -12,6 +11,7 @@ $(function () {
         $(slide).toggleClass('content__slide_up');
     });
 });
+"use strict";
 "use strict";
 "use strict";
 'use strict';
@@ -78,6 +78,7 @@ $(function () {
         }
     });
 });
+"use strict";
 'use strict';
 
 $(function () {
@@ -164,6 +165,10 @@ $(function () {
         initialSlide: 1,
         prevArrow: $('.reviews__slider .slider__arrow_prev'),
         nextArrow: $('.reviews__slider .slider__arrow_next')
+    });
+
+    $('.review-block_bg').on('click', function () {
+        $('#review-content').html('').append($(this).find('.review-block__wrap').html());
     });
 });
 'use strict';
