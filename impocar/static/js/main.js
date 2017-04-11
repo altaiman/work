@@ -1,6 +1,4 @@
 "use strict";
-"use strict";
-'use strict';
 
 $(function () {
     $('.content').on('click', function () {
@@ -11,10 +9,7 @@ $(function () {
         $(slide).toggleClass('content__slide_up');
     });
 });
-"use strict";
-"use strict";
-"use strict";
-'use strict';
+
 
 $(function () {
 
@@ -32,7 +27,7 @@ $(function () {
         tabWork();
     });
 });
-'use strict';
+
 
 $(function () {
     $('.header__menu').on('click', function () {
@@ -40,10 +35,7 @@ $(function () {
         $('.page').toggleClass('page_no-scroll');
     });
 });
-"use strict";
-"use strict";
-"use strict";
-'use strict';
+
 
 $(function () {
 
@@ -78,8 +70,7 @@ $(function () {
         }
     });
 });
-"use strict";
-'use strict';
+
 
 $(function () {
     slider();
@@ -110,9 +101,7 @@ $(function () {
         }
     }
 });
-"use strict";
-"use strict";
-'use strict';
+
 
 $(function () {
     var frame = $('.pdf__frame iframe');
@@ -153,7 +142,7 @@ $(function () {
         }
     });
 });
-'use strict';
+
 
 $(function () {
     $('.reviews__slider .slider__list').slick({
@@ -219,9 +208,7 @@ $(function () {
         $(this).addClass('route_open');
     });
 });
-"use strict";
-"use strict";
-'use strict';
+
 
 $(function () {
     $('.slide-image').on('mousemove', function (e) {
