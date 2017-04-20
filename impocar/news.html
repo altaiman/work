@@ -33,7 +33,7 @@
                         <h3 class="logotype__subtitle">Перевозка автомобилей автовозами
                                           </h3>
                     </a><a class="header__link header__link_calc icon icon_truck" href="#">Расчет стоимости перевозки автомобиля</a><a class="header__link header__link_mark icon icon_mark" href="#">Где сейчас моё авто?</a>
-                    <div class="header__contact"><a class="header__link header__link_call icon icon_phone" href="#">Заказать звонок</a><a class="header__link header__link_phone" href="tel:88007755165">8 (800) 77-55-165</a>
+                    <div class="header__contact"><a class="header__link header__link_call icon icon_phone" data-fancybox="data-fancybox" data-src="#modal-callback">Заказать звонок</a><a class="header__link header__link_phone" href="tel:88007755165">8 (800) 77-55-165</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="navigation__mobile"><a class="header__link header__link_call icon icon_phone" href="#">Заказать звонок</a><a class="header__link header__link_mark icon icon_mark" href="#">Где сейчас моё авто?</a>
+                <div class="navigation__mobile"><a class="header__link header__link_call icon icon_phone" data-fancybox="data-fancybox" data-src="#modal-callback">Заказать звонок</a><a class="header__link header__link_mark icon icon_mark" href="#">Где сейчас моё авто?</a>
                     <div class="menu menu_mobile">
                         <ul class="menu__list">
                             <li class="menu__item menu__item_m"><a class="menu__link menu__link_m" href="about.html">О нас</a>
@@ -264,6 +264,25 @@
                 </div>
             </div>
         </footer>
+        <div class="modal modal_callback window" id="modal-callback">
+            <h3 class="window__title">Заказ звонка
+                        </h3>
+            <div class="window__content">
+                <div class="window__form form form_callback">
+                    <label class="form__field"><span class="form__field-name">Ф.И.О.</span>
+                        <input class="form__field-inp" type="text" />
+                    </label>
+                    <label class="form__field"><span class="form__field-name">№ телефона</span>
+                        <input class="form__field-inp" type="tel" />
+                    </label>
+                    <label class="form__field"><span class="form__field-name">Вы находитесь</span>
+                        <input class="form__field-inp" type="text" />
+                    </label>
+                    <button class="form__btn btn" type="submit">Заказать
+                    </button>
+                </div>
+            </div>
+        </div>
 
 
         <script src="static/js/main.min.js"></script>

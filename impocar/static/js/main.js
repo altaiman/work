@@ -1,5 +1,3 @@
-"use strict";
-"use strict";
 'use strict';
 
 $(function () {
@@ -11,9 +9,6 @@ $(function () {
         $(slide).toggleClass('content__slide_up');
     });
 });
-"use strict";
-"use strict";
-"use strict";
 'use strict';
 
 $(function () {
@@ -35,14 +30,30 @@ $(function () {
 'use strict';
 
 $(function () {
+    function resize() {
+        if ($(window).width() > 760) {
+            $('.page').removeClass('page_no-scroll');
+            $('.header__menu').removeClass('header__menu_opened');
+        }
+    }
+
     $('.header__menu').on('click', function () {
         $(this).toggleClass('header__menu_opened');
         $('.page').toggleClass('page_no-scroll');
     });
+
+    $(window).on('resize', resize);
+
+    $('[data-fancybox]').on('click', function () {
+        $('.page').removeClass('page_no-scroll');
+        $('.header__menu').removeClass('header__menu_opened');
+    });
+
+    $('[data-fancybox]').fancybox({
+        focus: false,
+        infobar: false
+    });
 });
-"use strict";
-"use strict";
-"use strict";
 'use strict';
 
 $(function () {
@@ -78,7 +89,6 @@ $(function () {
         }
     });
 });
-"use strict";
 'use strict';
 
 $(function () {
@@ -110,8 +120,6 @@ $(function () {
         }
     }
 });
-"use strict";
-"use strict";
 'use strict';
 
 $(function () {
@@ -164,7 +172,13 @@ $(function () {
         centerMode: true,
         initialSlide: 1,
         prevArrow: $('.reviews__slider .slider__arrow_prev'),
-        nextArrow: $('.reviews__slider .slider__arrow_next')
+        nextArrow: $('.reviews__slider .slider__arrow_next'),
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+                variableWidth: false
+            }
+        }]
     });
 
     $('.review-block_bg').on('click', function () {
@@ -219,8 +233,6 @@ $(function () {
         $(this).addClass('route_open');
     });
 });
-"use strict";
-"use strict";
 'use strict';
 
 $(function () {
